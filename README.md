@@ -52,39 +52,13 @@ Add more photos or short demo GIFs in an `images/` folder if you want a richer R
 3. Select the correct COM port.
 4. Click Upload.
 
-## How to put this project on GitHub (quick)
-
-From PowerShell in the `car` folder (`D:\Nikhil\pd-main\selfcar\car`):
-
-```powershell
-Set-Location -Path 'D:\Nikhil\pd-main\selfcar\car'
-git init
-git add .
-git commit -m "Initial commit: Object Avoidance Robot"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-Or use the GitHub website to create a new repo and follow the "push an existing repository from the command line" instructions it provides.
-
-If you have the GitHub CLI (`gh`) and are authenticated you can run:
-
-```powershell
-gh repo create <repo-name> --public --source=. --remote=origin --push
-```
-
 ## License
 
 This repository is licensed under the MIT License — see `LICENSE`.
 
 ## Notes and troubleshooting
 
-- If `git push` asks for credentials, use your GitHub username and a personal access token (PAT) if password auth is disabled, or run `gh auth login` to authenticate.
 - If the ultrasonic sensor returns no reading, check wiring for TRIG/ECHO and ensure echo pin is read with appropriate voltage (use a divider if needed).
 - For line following, calibrate IR sensors' threshold by printing `digitalRead()` values to the Serial Monitor.
 
 ---
-Updated to include wiring and images present in the repository.
-
-If you enable GitHub Pages (Project site) pointing at the `docs/` folder, a simple documentation site is already prepared.
