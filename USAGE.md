@@ -59,14 +59,3 @@ Make sure motor driver power (12V or battery) shares a common ground with the Ar
 - `Object_Avoidance_Robot.png` — project photo
 - `circuit_diagram.jpg` — wiring diagram
 
-## Commit & push steps (quick)
-
-From the `car` folder in PowerShell:
-
-```powershell
-git add .
-git commit -m "Add usage and wiring info; include images"
-git push
-```
-
-If you want, I can update this file with a more detailed schematic (Fritzing / KiCad export) or add labeled photos.
